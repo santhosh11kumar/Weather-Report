@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img src="Assets_1/defaultweather.gif" class="background" alt="">
+    <div class="divcenter">
+        <h1 class="title">Weather Report</h1>
+
+        <!-- Navigation -->
+        <div class="Nav">
+
+            <div class="User_weather_tab">
+                Your Weather
+            </div>
+
+            <div class="User_request_weather_tab">
+                Search Weather
+            </div>
+
+        </div>
+
+        <!-- Hero-section -->
+
+        <!-- Grant access -->
+        <div class="grant_access_loc grant_address ">
+            <div>
+                <img src="Assets/location.png" alt class="pin_img">
+            </div>
+            <div>
+                <p>Grant Location Access</p>
+                <p>Allow Access to get weather Information</p>
+            </div>
+            <div>
+                <button class="grant_access_btn">Grant Access</button>
+            </div>
+        </div>
+
+
+        <!-- user-search-location -->
+
+        <div class="user_search_location search_bar_container">
+            <input type="text" id="city_name" placeholder="City Name">
+            <button type="submit" class="city_submit"><img src="Assets/search.png" alt class="search_img"></button>
+        </div>
+
+        <!--loading  -->
+        <div class="content loading_gif">
+            <img src="Assets/new.gif" alt class="loading">
+        </div>
+
+
+        <!-- user Location weather -->
+        <div class="user_Location_content user_address_container">
+
+            <div class="first_line">
+                <div class="user_location_name">
+
+                </div>
+                <img class="location_nation">
+
+                </img>
+            </div>
+            <div class="second_line">
+            <div class="weather_description">
+
+            </div>
+
+            <img class="weather_description_img">
+
+            </img>
+        </div>
+            <div class="temperature">
+
+            </div>
+
+            <div class="types">
+                <div class="windspeed val_display">
+                    <img src="Assets/wind.png" alt class="img_">
+                    windspeed
+                    <div class="windspeed_val">
+
+                    </div>
+                </div>
+
+                <div class="humidity val_display">
+                    <img src="Assets/humidity.png" alt class="img_">
+                    humidity
+                    <div class="humidity_val">
+
+                    </div>
+                </div>
+
+                <div class="clouds val_display">
+                    <img src="Assets/cloud.png" alt class="img_">
+                    clouds
+                    <div class="clouds_val">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="display_Error error_conatiner">
+            <h2 class="Error_message">Enter valid City</h2>
+            <img src="Assets/not-found.png" alt class="error_img">
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
